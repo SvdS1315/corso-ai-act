@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alfabetizzazione IA · KI-Kompetenz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@500&family=Geist:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: oklch(0.965 0.004 80);
+    --surface: oklch(0.985 0.003 80);
+    --border: oklch(0.9 0.006 78);
+    --text: oklch(0.18 0.005 60);
+    --text-muted: oklch(0.42 0.006 60);
+    --label: oklch(0.58 0.006 60);
+    --accent: oklch(0.58 0.13 35);
+    --accent-hover: oklch(0.5 0.14 35);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: oklch(0.17 0.006 60);
+      --surface: oklch(0.22 0.006 60);
+      --border: oklch(0.32 0.008 65);
+      --text: oklch(0.95 0.004 80);
+      --text-muted: oklch(0.72 0.006 70);
+      --label: oklch(0.65 0.008 70);
+      --accent: oklch(0.72 0.12 35);
+      --accent-hover: oklch(0.8 0.11 35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: oklch(0.17 0.006 60);
+    --surface: oklch(0.22 0.006 60);
+    --border: oklch(0.32 0.008 65);
+    --text: oklch(0.95 0.004 80);
+    --text-muted: oklch(0.72 0.006 70);
+    --label: oklch(0.65 0.008 70);
+    --accent: oklch(0.72 0.12 35);
+    --accent-hover: oklch(0.8 0.11 35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Geist, -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-hover); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .wrap { width: 100%; max-width: 860px; display: flex; flex-direction: column; gap: 48px; }
+
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    font-family: Newsreader, serif;
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin: 0;
+    max-width: 30ch;
+    text-wrap: balance;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 62ch;
+  }
+  .header { display: flex; flex-direction: column; gap: 22px; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 620px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 220px;
+  }
+  .card .label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--label);
+  }
+  .card h2 {
+    font-family: Newsreader, serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+  }
+  .card .links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .card .links a.primary {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .card .links a.secondary {
+    font-size: 14px;
+    color: var(--label);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="eyebrow">Art. 4 Reg. (UE) 2024/1689 · Art. 4 VO (EU) 2024/1689</div>
+    <h1>Alfabetizzazione IA · KI-Kompetenz</h1>
+    <p class="subtitle">Scegli la lingua per iniziare il corso. I due percorsi hanno contenuti identici.</p>
+    <p class="subtitle">Wählen Sie die Sprache, um den Kurs zu starten. Beide Fassungen haben identische Inhalte.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="label">Italiano</div>
+      <h2>Alfabetizzazione in materia di intelligenza artificiale</h2>
+      <p>7 moduli, circa 75 minuti, verifica finale di 10 domande e attestazione da stampare.</p>
+      <div class="links">
+        <a class="primary" href="corso-it.html">Inizia il corso in italiano</a>
+        <a class="secondary" href="corso-it-slide.html">Versione presentazione in aula (IT)</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Deutsch</div>
+      <h2>KI-Kompetenz im Umgang mit künstlicher Intelligenz</h2>
+      <p>7 Module, rund 75 Minuten, Abschlusstest mit 10 Fragen und Nachweis zum Ausdrucken.</p>
+      <div class="links">
+        <a class="primary" href="kurs-de.html">Kurs auf Deutsch starten</a>
+        <a class="secondary" href="kurs-de-slide.html">Version für Präsenzschulung (DE)</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
